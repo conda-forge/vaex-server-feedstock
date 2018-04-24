@@ -14,12 +14,15 @@ Summary: Webserver and client for vaex for a remote dataset
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/vaex-server-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vaex-server-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/vaex-server-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/vaex-server-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vaex-server/badges/version.svg)](https://anaconda.org/conda-forge/vaex-server)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vaex-server/badges/downloads.svg)](https://anaconda.org/conda-forge/vaex-server)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-vaex--server-green.svg)](https://anaconda.org/conda-forge/vaex-server) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/vaex-server.svg)](https://anaconda.org/conda-forge/vaex-server) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/vaex-server.svg)](https://anaconda.org/conda-forge/vaex-server) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/vaex-server.svg)](https://anaconda.org/conda-forge/vaex-server) |
 
 Installing vaex-server
 ======================
