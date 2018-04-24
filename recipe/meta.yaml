@@ -1,6 +1,6 @@
 {% set name = "vaex-server" %}
-{% set version = "0.1.2" %}
-{% set sha256 = "f7d861017f5429d8a2ef621fc895c68471a2ec4ef237304c8b9c3ac6ff547aae" %}
+{% set version = "0.2.1" %}
+{% set sha256 = "658bf3eb3cc859f693e5ef8c5efe806f8db3d3bc3676bfd8389cb0f50822e005" %}
 
 package:
   name: {{ name|lower }}
@@ -14,12 +14,13 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
     - setuptools
+    - pip
   run:
     - python
     - vaex-core
