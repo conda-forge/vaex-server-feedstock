@@ -1,6 +1,6 @@
 {% set name = "vaex-server" %}
-{% set version = "0.2.1" %}
-{% set sha256 = "658bf3eb3cc859f693e5ef8c5efe806f8db3d3bc3676bfd8389cb0f50822e005" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "959666ab32ce76957db7b05d2984873a46244bc142c11a8a57ab1cf3a05dc8f2" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
