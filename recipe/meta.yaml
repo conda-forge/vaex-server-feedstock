@@ -1,6 +1,6 @@
 {% set name = "vaex-server" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "82647f5fec6bd1257161d0a9856a3dccf38338d6609e7714b760dbf607ae0922" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "9ad6ef196a7a49b21a9842dd3a612dcd6614c9cf11c279d5be3590a810108555" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - pip
