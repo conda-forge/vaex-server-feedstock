@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >= 3.6
+    - python >=3.6
     - setuptools
     - pip
   run:
-    - python >= 3.6
+    - python >=3.6
     - vaex-core >=4.0.0,<5
     - tornado >4.1
     - cachetools
