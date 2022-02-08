@@ -1,6 +1,6 @@
 {% set name = "vaex-server" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "805f4de493b9d0d0627c5fd0bffdf9d01df62f3a75abbd7c279df795991dca63" %}
+{% set version = "0.8.1" %}
+{% set sha256 = "655e7702df77efdda3ba9527bc423a43c87d584407478af0dec8608398723934" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - vaex-core >=4.7.0,<4.8.0
+    - vaex-core >=4.7.0,<5.0.0
     - tornado >4.1
     - cachetools
     - fastapi
