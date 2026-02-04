@@ -1,6 +1,6 @@
 {% set name = "vaex-server" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "655e7702df77efdda3ba9527bc423a43c87d584407478af0dec8608398723934" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "d453a32aa9fb7090ad324b009d190a94b96aa696b189f8d060c688995f621f9c" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
